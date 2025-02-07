@@ -6,6 +6,11 @@ body {
   font-family: "Inter";
   font-style: normal;
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 .top-header {
   background-color: white;
   position: sticky;
@@ -40,6 +45,10 @@ body {
 
 .social-link img {
   width: 20px;
+}
+main {
+  max-width: 1920px;
+  width: 100%;
 }
 
 #about {
@@ -120,7 +129,7 @@ body {
 }
 .gallery-item {
   position: absolute;
-  width: 100%;
+  max-width: 100%;
   height: min-content;
   object-fit: cover;
 }
@@ -357,5 +366,15 @@ input[type="submit"] {
   }
   .picture {
     width: 80%;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  #services .container,
+  #contact .container {
+    width: 100%;
+  }
+  .picture.right::before {
+    width: 100%;
   }
 }
