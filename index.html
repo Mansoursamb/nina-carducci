@@ -12,16 +12,10 @@
     />
 
     <!-- Préchargement du CSS principal -->
-    <link
-      rel="preload"
-      href="./assets/style.css"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
-    />
-    <noscript><link rel="stylesheet" href="./assets/style.css" /></noscript>
+    <link rel="preload" href="./assets/style.min.css" as="style" />
 
     <!-- Fichier CSS de Bootstrap -->
-    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
 
     <title>Nina Carducci - Photographe</title>
     <meta
@@ -32,16 +26,11 @@
       name="keywords"
       content="Nina Carducci, photographe, Bordeaux, portraits, mariages, concerts, entreprises"
     />
-
     <!-- Chargement différé des scripts -->
-    <script
-      defer
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      async
-    ></script>
-    <script defer src="./assets/bootstrap/bootstrap.bundle.js" async></script>
-    <script defer src="./assets/maugallery.js" async></script>
-    <script defer src="./assets/scripts.js" async></script>
+    <script defer src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script defer src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <script defer src="./assets/maugallery.js"></script>
+    <script defer src="./assets/scripts.js"></script>
   </head>
   <body>
     <header>
@@ -100,7 +89,6 @@
                 src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp"
                 alt="ryoji-iwata"
                 class="d-block w-100"
-                loading="lazy"
               />
             </div>
             <div class="carousel-item">
