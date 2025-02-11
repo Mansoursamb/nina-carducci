@@ -50,11 +50,6 @@ main {
   max-width: 1920px;
   width: 100%;
 }
-button:focus-visible,
-a:focus-visible {
-  outline: 2px solid #ff6600;
-}
-
 #about {
   display: flex;
   background-color: #f6d2b8;
